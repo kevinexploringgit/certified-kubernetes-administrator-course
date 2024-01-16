@@ -118,7 +118,7 @@
          
   </details>
 
-  8. Run below command to create a pod in namespace `finance`:
+  8. Create a POD in the `finance` namespace named temp-bus with the image redis:alpine.
 
      <details>
 
@@ -127,7 +127,7 @@
      ```
      </details>
 
-  9. Run below command and troubleshoot step by step:
+  9. A new application orange is deployed. There is something wrong with it. Identify and fix the issue.
 
        <details>
   
@@ -148,7 +148,7 @@
        ```
        </details>
 
-  10. Apply below manifests:
+  10. Expose the hr-web-app as service hr-web-app-service application on port 30082 on the nodes on the cluster.
 
       <details>
 
@@ -174,7 +174,7 @@
       ```
       </details>
 
-  11. Run the below command to redirect the o/p:
+  11. Use JSON PATH query to retrieve the osImages of all the nodes and store it in a file /opt/outputs/nodes_os_x43kj56.txt.
 
       <details>
 
@@ -183,7 +183,11 @@
       ```
       </details>
 
-  12. Apply the below manifest to create a PV:
+  12. Create a Persistent Volume with the given specification: -
+      Volume name: pv-analytics
+      Storage: 100Mi
+      Access mode: ReadWriteMany
+      Host path: /pv/data-analytics
 
       <details>
      
