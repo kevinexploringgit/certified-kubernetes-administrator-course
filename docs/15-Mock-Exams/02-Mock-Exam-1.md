@@ -8,23 +8,23 @@
 
      <details>
      
-     ```
-     apiVersion: v1
-     kind: Pod
-     metadata:
-       creationTimestamp: null
-       labels:
-         run: nginx-pod
-       name: nginx-pod
-     spec:
-       containers:
-       - image: nginx:alpine
-         name: nginx-pod
-         resources: {}
-       dnsPolicy: ClusterFirst
-       restartPolicy: Always
-     status: {}
-     ```
+           ```
+           apiVersion: v1
+           kind: Pod
+           metadata:
+             creationTimestamp: null
+             labels:
+               run: nginx-pod
+             name: nginx-pod
+           spec:
+             containers:
+             - image: nginx:alpine
+               name: nginx-pod
+               resources: {}
+             dnsPolicy: ClusterFirst
+             restartPolicy: Always
+           status: {}
+           ```
      </details>
 
   2. Run below command which create a pod with labels:
