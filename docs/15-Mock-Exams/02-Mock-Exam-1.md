@@ -139,7 +139,7 @@
      <details>
 
      ```
-     kubectl run temp-bus --image=redis:alpine -n finance
+     k run temp-bus --image=redis:alpine -n finance
      ```
      </details>
 
