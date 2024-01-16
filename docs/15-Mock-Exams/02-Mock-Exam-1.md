@@ -105,32 +105,32 @@
 
      <details>
 
-    k run static-busybox --image busybox --dry-run=client -o yaml --command -- sleep 1000 > static-busybox.yaml
-
-  move the file to `/etc/kubernetes/manifests`
+         k run static-busybox --image busybox --dry-run=client -o yaml --command -- sleep 1000 > static-busybox.yaml
+    
+      move the file to `/etc/kubernetes/manifests`
+             
+         mv static-busybox.yaml /etc/kubernetes/manifests/
+    
+      manifest file should look like this:
          
-    mv static-busybox.yaml /etc/kubernetes/manifests/
-
-  manifest file should look like this:
-     
-             apiVersion: v1
-             kind: Pod
-             metadata:
-               creationTimestamp: null
-               labels:
-                 run: static-busybox
-               name: static-busybox
-             spec:
-               containers:
-               - command:
-                 - sleep
-                 - "1000"
-                 image: busybox
-                 name: static-busybox
-                 resources: {}
-               dnsPolicy: ClusterFirst
-               restartPolicy: Always
-             status: {}
+                 apiVersion: v1
+                 kind: Pod
+                 metadata:
+                   creationTimestamp: null
+                   labels:
+                     run: static-busybox
+                   name: static-busybox
+                 spec:
+                   containers:
+                   - command:
+                     - sleep
+                     - "1000"
+                     image: busybox
+                     name: static-busybox
+                     resources: {}
+                   dnsPolicy: ClusterFirst
+                   restartPolicy: Always
+                 status: {}
          
   </details>
 
