@@ -7,10 +7,8 @@
   1. Apply below manifests:
 
      <details>
-     
-           ```
-            k run nginx-pod --image=nginx:alpine
-           ```
+       
+         k run nginx-pod --image=nginx:alpine
      </details>
 
   2. Run below command which create a pod with labels:
