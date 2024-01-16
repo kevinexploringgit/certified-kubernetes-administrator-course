@@ -105,7 +105,7 @@
 
      <details>
      Run the command first
-     ```
+    ```
      k run static-busybox --image busybox --dry-run-client -o yaml --command -- sleep 1000 > static-busybox.yaml
      ```
      move the file to /etc/kubernetes/manifests
