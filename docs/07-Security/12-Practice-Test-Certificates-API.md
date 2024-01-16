@@ -5,9 +5,8 @@ Solutions to the practice test - certificate API
 - A new member akshay joined our team. He requires access to our cluster. The Certificate Signing Request is at the /root location.
 
   <details>
-  ```
-  $ ls -l /root
-  ```
+          
+      $ ls -l /root
   </details>
   
 - View the answer at /var/answers/akshay-csr.yaml
