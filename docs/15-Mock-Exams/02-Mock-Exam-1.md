@@ -160,8 +160,7 @@
        Delete the running Orange pod and recreate the pod using command.
        
        ```
-       kubectl delete pod orange
-       kubectl create -f orange.yaml
+       k replace -f orange.yaml --force
        ```
        </details>
 
