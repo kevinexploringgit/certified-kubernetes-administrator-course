@@ -9,21 +9,7 @@
      <details>
      
            ```
-           apiVersion: v1
-           kind: Pod
-           metadata:
-             creationTimestamp: null
-             labels:
-               run: nginx-pod
-             name: nginx-pod
-           spec:
-             containers:
-             - image: nginx:alpine
-               name: nginx-pod
-               resources: {}
-             dnsPolicy: ClusterFirst
-             restartPolicy: Always
-           status: {}
+            k run nginx-pod --image=nginx:alpine
            ```
      </details>
 
@@ -32,7 +18,7 @@
      <details>
      
      ```
-     kubectl run messaging --image=redis:alpine --labels=tier=msg
+     k run messaging --image=redis:alpine --labels=tier=msg
      ```
      </details>
 
