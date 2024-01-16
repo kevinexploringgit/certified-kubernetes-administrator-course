@@ -109,7 +109,7 @@
 
         move the file to `/etc/kubernetes/manifests`
          
-             mv stati-busybox.yaml /etc/kubernetes/manifests/
+             mv static-busybox.yaml /etc/kubernetes/manifests/
 
         manifest file should look like this:
      
