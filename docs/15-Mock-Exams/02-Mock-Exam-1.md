@@ -139,25 +139,25 @@
 
   10. Run below command and troubleshoot step by step:
 
-     <details>
-
-     ```
-     kubectl describe pod orange
-     ```
-
-     Export the running pod using below command and correct the spelling of the command **`sleeeep`** to **`sleep`** 
-
-     ```
-     kubectl get pod orange -o yaml > orange.yaml
-     ```
-   
-     Delete the running Orange pod and recreate the pod using command.
+       <details>
+  
+       ```
+       kubectl describe pod orange
+       ```
+  
+       Export the running pod using below command and correct the spelling of the command **`sleeeep`** to **`sleep`** 
+  
+       ```
+       kubectl get pod orange -o yaml > orange.yaml
+       ```
      
-     ```
-     kubectl delete pod orange
-     kubectl create -f orange.yaml
-     ```
-     </details>
+       Delete the running Orange pod and recreate the pod using command.
+       
+       ```
+       kubectl delete pod orange
+       kubectl create -f orange.yaml
+       ```
+       </details>
 
   11. Apply below manifests:
 
