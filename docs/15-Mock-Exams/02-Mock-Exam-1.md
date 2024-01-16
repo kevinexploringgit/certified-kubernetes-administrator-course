@@ -103,31 +103,30 @@
 
   7. To Create a static pod, copy it to the static pods directory. In this case, it is `/etc/kubernetes/manifests`. Apply below manifests:
 
-  <details>
-    
-    ```
-         apiVersion: v1
-         kind: Pod
-         metadata:
-           creationTimestamp: null
-           labels:
-             run: static-busybox
-           name: static-busybox
-         spec:
-           containers:
-           - command:
-             - sleep
-             - "1000"
-             image: busybox
-             name: static-busybox
-             resources: {}
-           dnsPolicy: ClusterFirst
-           restartPolicy: Always
-         status: {}
-    ```
-
-    
-   </details>
+      <details>
+        
+        ```
+             apiVersion: v1
+             kind: Pod
+             metadata:
+               creationTimestamp: null
+               labels:
+                 run: static-busybox
+               name: static-busybox
+             spec:
+               containers:
+               - command:
+                 - sleep
+                 - "1000"
+                 image: busybox
+                 name: static-busybox
+                 resources: {}
+               dnsPolicy: ClusterFirst
+               restartPolicy: Always
+             status: {}
+        ```
+        
+      </details>
 
   9. Run below command to create a pod in namespace `finance`:
 
