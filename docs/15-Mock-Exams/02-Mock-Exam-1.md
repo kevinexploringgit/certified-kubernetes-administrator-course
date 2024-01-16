@@ -4,14 +4,14 @@
 
   #### Solution to the Mock Exam 1
 
-  1. Apply below manifests:
+  1. Deploy a pod named nginx-pod using the nginx:alpine image.
 
      <details>
        
          k run nginx-pod --image=nginx:alpine
      </details>
 
-  2. Run below command which create a pod with labels:
+  2. Deploy a messaging pod using the redis:alpine image with the labels set to tier=msg.
 
      <details>
      
@@ -21,16 +21,16 @@
      </details>
 
  
-  3. Run below command to create a namespace:
+  3. Create a namespace named apx-x9984574.
      
      <details>
 
      ```
-     kubectl create namespace apx-x9984574
+     k create ns apx-x9984574
      ```
      </details>
 
-  4. Use the below command which will redirect the o/p:
+  4. Get the list of nodes in JSON format and store it in a file at /opt/outputs/nodes-z3444kd9.json.
 
      <details>
 
@@ -39,7 +39,7 @@
      ```
      </details>
 
-  5. Execute below command which will expose the pod on port 6379:
+  5. Create a service messaging-service to expose the messaging application within the cluster on port 6379.
 
      <details>
 
@@ -48,7 +48,7 @@
      ```
      </details>
 
-  6. Apply below manifests:
+  6. Create a deployment named hr-web-app using the image kodekloud/webapp-color with 2 replicas.
 
      <details>
 
@@ -85,7 +85,7 @@
       ```
      </details>
 
-  7. To Create a static pod, copy it to the static pods directory. In this case, it is `/etc/kubernetes/manifests`. Apply below command:
+  7. Create a static pod named static-busybox on the controlplane node that uses the busybox image and the command sleep 1000.
 
      <details>
 
