@@ -104,14 +104,13 @@
   7. To Create a static pod, copy it to the static pods directory. In this case, it is `/etc/kubernetes/manifests`. Apply below command:
 
       <details>
-        
-         ```
+
              k run static-busybox --image busybox --dry-run=client -o yaml --command -- sleep 1000 > static-busybox.yaml
-         ```
+     
        move the file to `/etc/kubernetes/manifests`
-         ```
+         
              mv stati-busybox.yaml /etc/kubernetes/manifests/
-         ```
+     
      
          ```
              apiVersion: v1
