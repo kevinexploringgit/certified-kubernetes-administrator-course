@@ -182,7 +182,7 @@
       </details>
 
   12. Create a Persistent Volume with the given specification: -
-      Volume name: pv-analytics
+      <br>Volume name: pv-analytics</br>
       Storage: 100Mi
       Access mode: ReadWriteMany
       Host path: /pv/data-analytics
