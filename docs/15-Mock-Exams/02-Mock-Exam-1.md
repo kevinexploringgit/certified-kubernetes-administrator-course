@@ -128,7 +128,7 @@
         
       </details>
 
-  9. Run below command to create a pod in namespace `finance`:
+  8. Run below command to create a pod in namespace `finance`:
 
      <details>
 
@@ -137,7 +137,7 @@
      ```
      </details>
 
-  10. Run below command and troubleshoot step by step:
+  9. Run below command and troubleshoot step by step:
 
        <details>
   
@@ -159,7 +159,7 @@
        ```
        </details>
 
-  11. Apply below manifests:
+  10. Apply below manifests:
 
       <details>
 
@@ -185,7 +185,7 @@
       ```
       </details>
 
-  12. Run the below command to redirect the o/p:
+  11. Run the below command to redirect the o/p:
 
       <details>
 
@@ -194,7 +194,7 @@
       ```
       </details>
 
-  13. Apply the below manifest to create a PV:
+  12. Apply the below manifest to create a PV:
 
       <details>
      
