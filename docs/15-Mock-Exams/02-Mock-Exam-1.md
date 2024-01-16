@@ -104,7 +104,15 @@
   7. To Create a static pod, copy it to the static pods directory. In this case, it is `/etc/kubernetes/manifests`. Apply below manifests:
 
      <details>
-
+     Run the command first
+     ```
+     k run static-busybox --image busybox --dry-run-client -o yaml --command -- sleep 1000 > static-busybox.yaml
+     ```
+     move the file to /etc/kubernetes/manifests
+     ```
+     mv static-busybox.yaml /etc/kubernetes/manifests/
+     ```
+     The file manifest should look like this
      ```
      apiVersion: v1
      kind: Pod
@@ -127,7 +135,7 @@
      ```
      </details>
 
-  8. Run below command to create a pod in namespace `finance`:
+  9. Run below command to create a pod in namespace `finance`:
 
      <details>
 
@@ -136,7 +144,7 @@
      ```
      </details>
 
-  9. Run below command and troubleshoot step by step:
+  10. Run below command and troubleshoot step by step:
 
      <details>
 
@@ -158,7 +166,7 @@
      ```
      </details>
 
-  10. Apply below manifests:
+  11. Apply below manifests:
 
       <details>
 
@@ -184,7 +192,7 @@
       ```
       </details>
 
-  11. Run the below command to redirect the o/p:
+  12. Run the below command to redirect the o/p:
 
       <details>
 
@@ -193,7 +201,7 @@
       ```
       </details>
 
-  12. Apply the below manifest to create a PV:
+  13. Apply the below manifest to create a PV:
 
       <details>
      
