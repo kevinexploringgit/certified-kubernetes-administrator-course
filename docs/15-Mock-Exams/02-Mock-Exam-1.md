@@ -105,13 +105,13 @@
 
       <details>
 
-             k run static-busybox --image busybox --dry-run=client -o yaml --command -- sleep 1000 > static-busybox.yaml
+    k run static-busybox --image busybox --dry-run=client -o yaml --command -- sleep 1000 > static-busybox.yaml
 
-        move the file to `/etc/kubernetes/manifests`
+move the file to `/etc/kubernetes/manifests`
          
-             mv static-busybox.yaml /etc/kubernetes/manifests/
+    mv static-busybox.yaml /etc/kubernetes/manifests/
 
-        manifest file should look like this:
+manifest file should look like this:
      
              apiVersion: v1
              kind: Pod
@@ -132,7 +132,7 @@
                restartPolicy: Always
              status: {}
          
-      </details>
+  </details>
 
   9. Run below command to create a pod in namespace `finance`:
 
